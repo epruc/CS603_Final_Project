@@ -1,21 +1,17 @@
-# Assignment 4: A* with Jump-Point Search
+# CS603_Final_Project
+Implementation of D* Lite
+## Clone This Repository
+   ```
+   git clone git@github.com:umass-amrl/CS603_RRT.git
+   ```
 
-## Dependencies
-`sudo apt-get install cmake build-essential clang libgoogle-glog-dev  libgflags-dev cimg-dev`
+## Build 
+1. Clone this repo, enter the directory, then enter the folder Dstar_lite. 
+   All subsequent commands must be run from within the directory.
+1. Run `make`.  
+   
+## Run D* Lite
+```
+./bin/jps maps/empty.png 10 10 100 100 maps/map.png 
 
-## Build
-Run `make`.
-
-## Run
-Run `./bin/jps` with the map image, and optional goal and start locations:
-`./bin/jps map.png [goal_x goal y [start x start y]]`
-
-Examples:
-`./bin/jps maps/nsh4-small-dilated.png`
-`./bin/jps maps/nsh4-small-dilated.png 25 25`
-`./bin/jps maps/nsh4-small-dilated.png 25 25 15 15`
-
-## Sample maps
-There are several sample maps provided, for example `maps/nsh4-small-dilated.png`:
-![nsh4-small-dilated.png](maps/nsh4-small-dilated.png)
-
+```
